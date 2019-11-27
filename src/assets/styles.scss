@@ -1,0 +1,224 @@
+@import "./../globals.scss";
+
+html,
+body,
+#app {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.to-up-bt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  height: 75px;
+  background-color: #f1c40f;
+  bottom: 25px;
+  right: 25px;
+  border-radius: 75px;
+  position: fixed;
+  z-index: 9999;
+  font-size: 30px;
+  transition: 0.25s;
+  color: black;
+
+  &:hover {
+    color: white;
+    background-color: #d35400;
+  }
+}
+
+.floating-navbar {
+  position: fixed;
+  top: 60px;
+  left: 50px;
+  background-color: transparent;
+}
+
+.floating-navbar > .list-group-item {
+  background: transparent;
+  border: 0px;
+  border: 2px solid white;
+  margin-bottom: 15px;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  padding-left: 10px;
+  border-radius: 100px;
+  transition: 0.25s;
+
+  &:hover {
+    background-color: white;
+    color: black;
+  }
+
+  a {
+    width: 100% !important;
+    height: 100% !important;
+    background-color: red;
+    color: inherit;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body,
+#app {
+  transition: 0.25s;
+}
+
+body {
+  background-color: $endcolor;
+  overflow-x: hidden;
+}
+#app {
+  background: linear-gradient($topcolor, $endcolor);
+}
+
+body.prototypes {
+  background-color: $prototype;
+  #app {
+    background: linear-gradient($topcolor, $prototype);
+  }
+}
+
+body.spiral {
+  background-color: $spiral;
+  #app {
+    background: linear-gradient($topcolor, $spiral);
+  }
+}
+
+body.scrum {
+  background-color: $scrum;
+  #app {
+    background: linear-gradient($topcolor, $scrum);
+  }
+}
+
+.nav-item {
+  border: 2px solid;
+  border-radius: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 20px;
+  border-color: rgba(255, 255, 255, 0.7);
+  transition: 0.25s;
+  &:last-child {
+    margin-right: 0;
+  }
+  &:hover {
+    border-color: white;
+  }
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: lighter;
+  font-size: 100%;
+  transition: 0.25s;
+
+  &:hover {
+    color: white;
+  }
+}
+
+.collapsing,
+.collapse.show {
+  .nav-item {
+    border: 0px;
+  }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+
+.slide-left-enter-active,
+.slide-left-leave-active,
+.slide-right-enter-active,
+.slide-right-leave-active {
+  transition-duration: 0.5s;
+  transition-property: height, opacity, transform;
+  transition-timing-function: cubic-bezier(0.55, 0, 0.1, 1);
+  overflow: hidden;
+}
+
+.slide-left-enter,
+.slide-right-leave-active {
+  opacity: 0;
+  transform: translate(2em, 0);
+}
+
+.slide-left-leave-active,
+.slide-right-enter {
+  opacity: 0;
+  transform: translate(-2em, 0);
+}
+
+.main {
+  color: black;
+  background-color: white;
+  padding: 20px;
+
+  hr {
+    background-color: gray;
+    height: 2px;
+    border-radius: 20px;
+  }
+  .tag-name {
+    width: 100%;
+    text-align: center;
+    font-size: 200%;
+    font-weight: lighter;
+    margin-bottom: 20px;
+    border-radius: 100px;
+  }
+}
+
+.carousel-control-prev {
+  background: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0) 20%,
+    rgba(0, 0, 0, 0.5)
+  );
+  opacity: 1;
+}
+
+.carousel-control-prev-icon {
+  width: 60px;
+  height: 60px;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='red' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e");
+}
+
+.carousel-control-next-icon {
+  width: 60px;
+  height: 60px;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='red' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
+}
+
+.carousel-control-next {
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 20%,
+    rgba(0, 0, 0, 0.5)
+  );
+  opacity: 1;
+}
+
+.carousel-caption > * {
+  text-shadow: 1px 1px 10px white;
+  color: black;
+}
