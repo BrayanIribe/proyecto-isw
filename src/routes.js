@@ -44,7 +44,7 @@ export default [
   {
     path: "/prototypes/bibliography",
     component: PrototypesBibliography,
-    name: "Biografías"
+    name: "Bibliografías"
   },
   {
     path: "/spiral",
@@ -69,7 +69,7 @@ export default [
   {
     path: "/spiral/bibliography",
     component: SpiralBibliography,
-    name: "Biografías"
+    name: "Bibliografías"
   },
   {
     path: "/scrum",
@@ -94,7 +94,7 @@ export default [
   {
     path: "/scrum/bibliography",
     component: ScrumBibliography,
-    name: "Biografías"
+    name: "Bibliografías"
   },
   { path: "*", component: Home }
 ];
