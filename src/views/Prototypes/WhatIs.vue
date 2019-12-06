@@ -117,11 +117,34 @@
           >❌ Ventajas y desventajas</p>
           <p
             class='block mb-4'
-          >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod, dui quis dictum maximus, erat est congue odio, et dignissim tellus nulla vitae sem. Morbi et ante velit. Integer vestibulum semper nibh. Quisque quis vulputate tellus, quis aliquet tortor. Duis in nisi ultrices, efficitur tortor non, dapibus tellus. Phasellus porta nulla id risus bibendum porttitor. In ut efficitur magna. Etiam vitae tempor purus, ac tincidunt mi.</p>
-          <p class='phase mb-4' id='etapas'>👨‍💻 Etapas</p>
+          >✅ Los usuarios participan activamente en el desarrollo.</p>
           <p
             class='block mb-4'
-          >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod, dui quis dictum maximus, erat est congue odio, et dignissim tellus nulla vitae sem. Morbi et ante velit. Integer vestibulum semper nibh. Quisque quis vulputate tellus, quis aliquet tortor. Duis in nisi ultrices, efficitur tortor non, dapibus tellus. Phasellus porta nulla id risus bibendum porttitor. In ut efficitur magna. Etiam vitae tempor purus, ac tincidunt mi.</p>
+          >✅ Se puede identificar la funcionalidad que falta, lo que ayuda a reducir el riesgo de falla, ya que la creación de prototipos también se considera una actividad de reducción de riesgos.</p>
+          <p
+            class='block mb-4'
+          >✅ Ayuda al miembro del equipo a comunicarse efectivamente.</p>
+          <p
+            class='block mb-4'
+          >✅ La satisfacción del cliente existe porque el cliente puede sentir el producto en una etapa muy temprana.</p>
+          <p
+            class='block mb-4'
+          >✅ Apenas habrá posibilidades de rechazo de software.</p>
+          <p class='block mb-4'>❌ La creación de prototipos es un proceso lento.</p>
+          <p
+            class='block mb-4'
+          >❌ El costo de desarrollar un prototipo es un desperdicio total ya que el prototipo finalmente se desecha.</p>
+          <p
+            class='block mb-4'
+          >❌ La creación de prototipos puede alentar solicitudes de cambio excesivas.</p>
+          <p
+            class='block mb-4'
+          >❌ Algunas veces los clientes pueden no estar dispuestos a participar en el ciclo de iteración durante un período de tiempo más largo.</p>
+          <p
+            class='block mb-4'
+          >❌ Puede haber demasiadas variaciones en los requisitos de software cuando cada vez que el cliente evalúa el prototipo.</p>
+          <p class='phase mb-4' id='etapas'>👨‍💻 Etapas</p>
+          <b-img class='mb-3' src='https://i.imgur.com/Z0SxuLj.png' fluid></b-img>
         </div>
       </div>
     </div>

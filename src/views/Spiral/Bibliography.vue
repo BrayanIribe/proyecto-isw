@@ -4,16 +4,16 @@
       <h2 class='phase mb-4'>📕 Bibliografías</h2>
       <hr />
       <Biography
-        src='http://dsc.itmorelia.edu.mx/web/images/logo.png'
-        href='https://www.guru99.com/software-engineering-prototyping-model.html'
+        src='https://i.imgur.com/2HD7Jbf.jpg'
+        href='https://metodologia.es/espiral/'
         style='border: 2px solid white;'
         color='black'
         bgcolor='white'
-      >Prototyping Model in Software Engineering: Methodology, Process, Approach. 2019, de Guru99.</Biography>
+      >Aurelio Garandillas. (2017). Espiral. 03/11/2019.</Biography>
       <Biography
-        src='http://blogs.upn.edu.pe/ingenieria/wp-content/uploads/sites/4/2016/10/upn_blog_ing_software-rup_12-oct.jpg'
-        href='https://www.youtube.com/embed/cvv0Zj1CPZg'
-      >Julián Vanegas. (2016). Metodología RUP. 22 de octubre del 2019, de YouTube.</Biography>
+        src='https://i.imgur.com/HAH6uqt.jpg'
+        href='https://es.wikipedia.org/wiki/Desarrollo_en_espiral'
+      >Anonimo. (2019). Desarrollo en espiral. 03/11/2019, de Wikipedia.</Biography>
     </b-container>
   </div>
 </template>

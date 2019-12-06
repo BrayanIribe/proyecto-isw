@@ -29,7 +29,10 @@ export default {
     }
   },
   created() {
-    this.add('🤔 Lorem ipsum', 'https://www.youtube.com/watch?v=cvv0Zj1CPZg')
+    this.add(
+      '🤔 Modelo Espiral de un proyecto software',
+      'https://www.youtube.com/embed/Wsvr-aB0tPQ'
+    )
   }
 }
 </script>

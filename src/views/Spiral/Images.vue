@@ -1,25 +1,10 @@
 <template>
   <div>
     <b-container class='main' style='text-align:center;'>
-      <h2 class='phase mb-4'>🔁 Fases</h2>
-      <hr />
       <div class='row'>
         <div class='col-6 mb-3' v-for='(fase, i) in fases' v-bind:key='"a"+i'>
           <div class='tag-name'>{{ fase.name }}</div>
           <b-img :src='fase.src' fluid-grow></b-img>
-        </div>
-      </div>
-      <hr />
-      <h2 class='phase mb-4'>🍃 Tipos de prototipos</h2>
-      <hr />
-      <div class='row'>
-        <div
-          class='col-6 mb-3'
-          v-for='(disciplina, i) in disciplinas'
-          v-bind:key='"b"+i'
-        >
-          <div class='tag-name red'>{{ disciplina.name }}</div>
-          <b-img :src='disciplina.src' fluid></b-img>
         </div>
       </div>
     </b-container>
@@ -42,45 +27,18 @@ export default {
     }
   },
   created() {
+    this.add('👨‍💻️ Metodología de espiral', 'https://i.imgur.com/2HD7Jbf.jpg')
+    this.add('🍃 Meta', 'https://i.imgur.com/HAH6uqt.jpg')
     this.add(
-      '📊 Recopilación y análisis de requisitos',
-      'https://dummyimage.com/600x400/000/fff'
-    )
-    this.add('⚡ Diseño rápido', 'https://dummyimage.com/600x400/000/fff')
-    this.add('🏗️ Construcción', 'https://dummyimage.com/600x400/000/fff')
-    this.add(
-      '😄 Evaluación inicial del usuario',
-      'https://dummyimage.com/600x400/000/fff'
+      '🤔 ¿Cuando usar esta metodología?',
+      'https://i.imgur.com/6sJJmaB.jpg'
     )
     this.add(
-      '🧰 Refinado de prototipo',
-      'https://dummyimage.com/600x400/000/fff'
+      '🤔 ¿Dónde utilizar esta metodología?',
+      'https://i.imgur.com/VrdWRzK.jpg'
     )
-    this.add(
-      '✅ Implementación y mantenimiento',
-      'https://dummyimage.com/600x400/000/fff'
-    )
-
-    this.add(
-      '⚡ Prototipos desechables rápidos',
-      'https://dummyimage.com/600x400/000/fff',
-      1
-    )
-    this.add(
-      '🧬 Prototipo evolutivo',
-      'https://dummyimage.com/600x400/000/fff',
-      1
-    )
-    this.add(
-      '🔄 Prototipos incrementales',
-      'https://dummyimage.com/600x400/000/fff',
-      1
-    )
-    this.add(
-      '👨‍💻️ Prototipos extremos',
-      'https://dummyimage.com/600x400/000/fff',
-      1
-    )
+    this.add('🤔 ¿A quién va dirigido?', 'https://i.imgur.com/eEoPFp3.jpg')
+    this.add('❌ Ventajas y desventajas', 'https://i.imgur.com/nl1l1Vl.jpg')
   }
 }
 </script>

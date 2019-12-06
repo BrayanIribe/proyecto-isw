@@ -9,19 +9,6 @@
           <b-img :src='fase.src' fluid-grow></b-img>
         </div>
       </div>
-      <hr />
-      <h2 class='phase mb-4'>🍃 Tipos de prototipos</h2>
-      <hr />
-      <div class='row'>
-        <div
-          class='col-6 mb-3'
-          v-for='(disciplina, i) in disciplinas'
-          v-bind:key='"b"+i'
-        >
-          <div class='tag-name red'>{{ disciplina.name }}</div>
-          <b-img :src='disciplina.src' fluid></b-img>
-        </div>
-      </div>
     </b-container>
   </div>
 </template>
@@ -43,43 +30,20 @@ export default {
   },
   created() {
     this.add(
-      '📊 Recopilación y análisis de requisitos',
-      'https://dummyimage.com/600x400/000/fff'
-    )
-    this.add('⚡ Diseño rápido', 'https://dummyimage.com/600x400/000/fff')
-    this.add('🏗️ Construcción', 'https://dummyimage.com/600x400/000/fff')
-    this.add(
-      '😄 Evaluación inicial del usuario',
-      'https://dummyimage.com/600x400/000/fff'
+      '🎯 Planificación del sprint',
+      'https://st3.depositphotos.com/4111759/18641/v/1600/depositphotos_186414770-stock-illustration-business-characters-scrum-team-work.jpg'
     )
     this.add(
-      '🧰 Refinado de prototipo',
-      'https://dummyimage.com/600x400/000/fff'
+      '👨‍💻 Etapa de desarrollo',
+      'https://previews.123rf.com/images/iconicbestiary/iconicbestiary1612/iconicbestiary161200653/67654567-cub%C3%ADculo-de-la-oficina-centros-de-trabajo-con-los-empleados-en-los-mostradores-la-gente-de-negocios-qu.jpg'
     )
     this.add(
-      '✅ Implementación y mantenimiento',
-      'https://dummyimage.com/600x400/000/fff'
-    )
-
-    this.add(
-      '⚡ Prototipos desechables rápidos',
-      'https://dummyimage.com/600x400/000/fff',
-      1
+      '✅ Revisión del sprint',
+      'https://cdn5.vectorstock.com/i/1000x1000/43/09/review-rating-bubble-speeches-on-computer-vector-15874309.jpg'
     )
     this.add(
-      '🧬 Prototipo evolutivo',
-      'https://dummyimage.com/600x400/000/fff',
-      1
-    )
-    this.add(
-      '🔄 Prototipos incrementales',
-      'https://dummyimage.com/600x400/000/fff',
-      1
-    )
-    this.add(
-      '👨‍💻️ Prototipos extremos',
-      'https://dummyimage.com/600x400/000/fff',
-      1
+      '📊 Retroalimentación',
+      'https://www.tlgcommerce.es/blog/wp-content/uploads/sites/2/feedback.jpg'
     )
   }
 }

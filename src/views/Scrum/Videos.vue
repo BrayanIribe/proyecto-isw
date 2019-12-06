@@ -17,7 +17,7 @@
 
 <script>
 export default {
-  name: 'Images',
+  name: 'Videos',
   data() {
     return {
       videos: []
@@ -29,7 +29,7 @@ export default {
     }
   },
   created() {
-    this.add('🤔 Lorem ipsum', 'https://www.youtube.com/watch?v=cvv0Zj1CPZg')
+    this.add('Scrum en 6 minutos', 'https://www.youtube.com/embed/HhC75IonpOU')
   }
 }
 </script>
