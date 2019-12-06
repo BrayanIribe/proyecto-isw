@@ -2,7 +2,7 @@
   "name": "blog-isw",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/BrayanIribe/blog-isw-itson",
+  "homepage": "https://github.com/BrayanIribe/proyecto-isw",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",

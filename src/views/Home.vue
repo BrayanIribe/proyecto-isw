@@ -1,21 +1,31 @@
 <template>
-  <div style='width:100%;padding-top:8%;'>
-    <div class='main'>
-      <div class='body'>
-        <div class='title'>👨‍💻️ ISW</div>
-        <div class='info mt-3'>
-          <p
-            class='phase'
-          >Bienvenido a nuestro blog! Selecciona una metodología.</p>
+  <div style="width:100%;padding-top:8%;">
+    <div class="contact-bt">
+      <b-button
+        @click="$router.push('/contact')"
+        variant="outline-light"
+        pill
+        block
+        >Contacto</b-button
+      >
+    </div>
+    <div class="main">
+      <div class="body">
+        <div class="title">👨‍💻️ ISW</div>
+        <div class="info mt-3">
+          <p class="phase">
+            Bienvenido a nuestro blog! Selecciona una metodología.
+          </p>
         </div>
-        <div class='row mt-3' style='width:100%;'>
-          <div class='col-sm-4' v-for='(route, i) in routes' :key='"r"+i'>
+        <div class="row mt-3" style="width:100%;">
+          <div class="col-sm-4" v-for="(route, i) in routes" :key="'r' + i">
             <b-button
-              @click='$router.push(route.href)'
-              :variant='route.variant'
+              @click="$router.push(route.href)"
+              :variant="route.variant"
               pill
               block
-            >{{route.text}}</b-button>
+              >{{ route.text }}</b-button
+            >
           </div>
         </div>
       </div>
@@ -25,33 +35,41 @@
 
 <script>
 export default {
-  name: 'Home',
+  name: "Home",
   data() {
     return {
       routes: []
-    }
+    };
   },
   created() {
     this.routes.push({
-      text: 'Prototipos',
-      href: '/prototypes',
-      variant: 'outline-light'
-    })
+      text: "Prototipos",
+      href: "/prototypes",
+      variant: "outline-light"
+    });
     this.routes.push({
-      text: 'Espiral',
-      href: '/spiral',
-      variant: 'outline-light'
-    })
+      text: "Espiral",
+      href: "/spiral",
+      variant: "outline-light"
+    });
     this.routes.push({
-      text: 'SCRUM',
-      href: '/scrum',
-      variant: 'outline-light'
-    })
+      text: "SCRUM",
+      href: "/scrum",
+      variant: "outline-light"
+    });
   }
-}
+};
 </script>
 
-<style lang='scss' scoped>
+<style lang="scss" scoped>
+.contact-bt {
+  color: white;
+  transition: 0.25ms;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+}
 .i-row {
   width: 100%;
   display: flex;

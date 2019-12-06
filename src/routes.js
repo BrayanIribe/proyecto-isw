@@ -1,4 +1,5 @@
 import Home from "./views/Home";
+import Contact from "./views/Contact";
 import PrototypesIndex from "./views/Prototypes/Index";
 import PrototypesWhatIs from "./views/Prototypes/WhatIs";
 import PrototypesImages from "./views/Prototypes/Images";
@@ -19,6 +20,7 @@ import ScrumBibliography from "./views/Scrum/Bibliography";
 
 export default [
   { path: "/", component: Home, name: "Inicio" },
+  { path: "/contact", component: Contact, name: "Contacto" },
   {
     path: "/prototypes",
     component: PrototypesIndex,
